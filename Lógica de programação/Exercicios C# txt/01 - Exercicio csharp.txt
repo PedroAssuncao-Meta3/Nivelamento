@@ -1,0 +1,110 @@
+1)Numeros:
+	Criar programa que recebera dois numeros de entrada e retornar o resultado conforme exemplo abaixo:
+	
+	Entrada: 5 e 2
+	Saida: 
+		Soma: 7
+		Subtração: 3
+		Multiplicação: 10
+		Divisão: 2.5
+		Divisão inteira: 2
+		Resto: 0.5
+		Potencia: 25
+
+2)Numeros: 
+	Criar um programa que receba um texto e retorne se o mesmo pode ser convertido para numero. 
+	Caso seja possivel informar se o numero é inteiro ou flutuante.
+	Desconsiderar a configuração de cultura (vide dicas), portanto o usuario pode usar . ou , como separador de decimal.
+	
+	Entrada: 3 	saida: Inteiro
+	entrada: 3.5 	saida: Flutuante
+	entrada: 3,5 	saida: Flutuante
+	Entrada: Zeca	saida: Não é um numero valido
+
+3)Texto:
+	Criar programa que receba um texto e retorne o tamanho dele seguido de seu conteudo em caixa alta e caixa baixa.
+	
+	Entrada: "Isso é UM Teste"		
+	Saida: "15 - isso é um teste - ISSO É UM TESTE"
+
+4)Texto: 
+	Criar um programa que receba dois texto e que retorne a quantidade de ocorrencias do primeiro parametro no segundo parametro.
+	Deve ser desconsiderado se é maiuscula ou minuscula, mas deve considerar acentuação, portanto a é diferente de á.
+	
+	Entrada: A e "A pipa do Vovo não sobre MAIS."
+	Saida: 3 ocorrencias
+	
+5)Texto: 
+	Criar um programa que receba um texto e valida se existe o caracter - no mesmo.
+	Caso ocorra, retorne o conteudo após o - sem espaços no inicio e no final. 
+	Caso não existe, retorne o mesmo texto com o prefixo sendo a data atual seguida de um -;
+	
+	Entrada: "teste - texto       " 
+	Saida: "texto"
+	
+	Entrada: "teste"  
+	Saida: "10/06/2021 14:42:38 - teste"
+
+6)Data: 
+	Criar um programa que receba um texto e retorne se o mesmo pode ser convertido para data. 
+	Utilizar configuração de cultura padrão, portanto o formato da data depende de sua configuração local. 
+	No meu exemplo está considerando DD/MM/AAAA que é a configuração padrão em portugues.
+	
+	Entrada: 01/01/2010		saida: Data válida
+	Entrada: 31/02/2010 	saida: Data invalida
+	Entrada: Jujubinha 		saida: Data invalida
+	Entrada: 0 				saida: Data invalida
+
+7)Data: 
+	Criar programa para receber uma data e extrair dela o Dia, Mes, Ano, Hora, Minutos e Segundos.
+	
+	Entrada: 01/01/2010 15:05:33	
+	Saida: Dia 01 do mês 01 do ano 2010, as 15 horas, 05 minutos e 33 segundos.
+
+8)Data: 
+	Criar um programa que receberá duas datas e validará se a primeira é maior que a segunda, retornando excessão caso seja, e se as mesma são do mesmo dia. 
+	Caso seja deve retorna a diferença em horas, minutos e segundos. 
+	Caso não seja, deve retornar a diferença na maior unidade. 
+	Se for mais de um ano, retornar em anos; menos que ano, mas maior que meses, em meses; menor que meses em dias; menor que dias, zero.
+	O retorno deverá ser distinto por unidade.
+	
+	Entrada: 01/01/2001 10:00:00 e 01/01/2001 10:03:30 
+	Saida: 
+		Diferença em horas: 0,
+		Diferença em minutos: 3.5 
+		Diferença em segundos: 180 
+		
+	Entrada: 01/03/2001 10:00:00 e 30/03/2001 12:00:00 
+	Saida: 
+		Diferença em dias: 30 dias.	
+		
+	Entrada: 01/03/2001 10:00:00 e 01/04/2001 12:00:00 
+	Saida: 
+		Diferença em mes: 1 mes.
+
+	Entrada: 01/03/2011 10:00:00 e 01/04/2025 12:00:00 
+	Saida: 
+		Diferença em anos: 14 anos.
+
+9)Data:
+	Criar um programa que receberá 6 parametros de texto e os mesmos devem ser usados para criar uma nova data no formato DD/MM/AAAA HH:MI:SS.
+	Devem ser inseridas todas os tratamentos e informar como retorno o que está errado. 
+	
+	Entrada: 1, 2,2003,4,5,6 
+	Saida: 01/02/2003 04:05:06	
+	
+	Entrada: 1, 20,2003,4,5,6 
+	Saida: O parametro referente ao mês é invalido. 
+
+Dicas:
+-->	Lembre-se que você está usando uma linguagem orientada a objeto que tem um framework gigantesco.
+	99% das operações basicas já estão programadas neste framework. Portanto evite recriar a roda, gastar um tempo de pesquisa nunca é ruím.
+-->	Para montar os textos de saida, dê uma consultada no objeto "StringBuilder" e no método "string.Format", bem melhor que ficar concatenando. 
+-->	Fique atento a todo conteúdo do enunciado. Pode ter detalhes nele que não foram apresentados nos exemplos.
+--> Configurações de cultura são as configurações regionais do aplicativo, por padrão ele pega o da maquina, mas você pode alterar isso.
+-->	Para tratar data, use e abuse do DateTime. 
+--> Diferença entre datas é algo minucioso e pode ser chato se tentar a força bruta, portanto converse com o mestre Google
+
+
+
+	 
